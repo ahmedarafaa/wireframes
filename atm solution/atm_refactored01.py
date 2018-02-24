@@ -14,12 +14,13 @@ def withdraw(balance , requested):
                 remaining += i
         balance -= remaining
         print 'Your remaining balance is: ' + str(balance)
-        return balance
     else:
-        print "You don't have enough balance"
+        print "Please enter valid amount!!"
+
+    return balance
 
 #balance = 500
-balance = withdraw(balance, 277)
+balance = withdraw(balance, 0)
 balance = withdraw(balance, 30)
 balance = withdraw(balance, 5)
 balance = withdraw(balance, 500)
