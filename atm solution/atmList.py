@@ -43,7 +43,8 @@ smartBank.withdraw(277)
 smartBank.withdraw(30)
 smartBank.show_withdrawals()
 
-"""barakaBank = atmClass(barakaBankBalance,'Baraka Bank')
+barakaBank = AtmClass(barakaBankBalance,'Baraka Bank')
 barakaBank.withdraw(500)
 barakaBank.withdraw(300)
-barakaBank.withdraw(300)"""
+barakaBank.withdraw(300)
+barakaBank.show_withdrawals()
