@@ -1,6 +1,6 @@
 class AtmClass(object):
 
-    moneyCategory = [100,50,10,5,2,1]
+
     """docstring for atmClass."""
     def __init__(self, balance, bankName):
         print '*** ' + str(bankName) + ' ***'
@@ -8,14 +8,14 @@ class AtmClass(object):
         self.bankName  = bankName
         self.withdrawalsList = []
 
-    def withdraw(self,requested):
+    def withdraw(self,requested,moneyCategory = [100,50,10,5,2,1]):
         remaining = 0
         if requested > 0 and requested <= self.balance:
             print 'Your balace is: ' + str(self.balance)
             print 'You requested :'  + str(requested)
             print '#########################'
             self.withdrawalsList.append(requested)
-            for i in AtmClass.moneyCategory:
+            for i in moneyCategory:
                 while (requested - i) >= 0:
                     print 'given ' + str(i)
                     requested -= i
