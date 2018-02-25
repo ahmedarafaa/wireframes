@@ -4,3 +4,10 @@ class Memmber(object):
         self.name = name
         self.age  = age
         print 'Memmber'
+
+class Post(object):
+    """docstring forPost."""
+    def __init__(self, address , content):
+        self.address    = address
+        self.content    = content
+        print 'Post'
