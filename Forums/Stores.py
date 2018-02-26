@@ -3,25 +3,9 @@ class MemberStore():
     members = []
 
     def get_all(self):
-        pass
+        return MemberStore.members
         # get all members
 
     def add(self, member):
-        pass
+        return MemberStore.members.append(member)
         # append member
-
-    def get_by_id(self, id):
-        pass
-        # search for member by id
-
-    def update(self, member):
-        pass
-        # update member data
-
-    def delete(self, id):
-        pass
-        # delete member by id
-
-    def entity_exists(self, member):
-        pass
-        # check if an entity exists in a store

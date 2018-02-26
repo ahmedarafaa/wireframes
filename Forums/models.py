@@ -5,7 +5,7 @@ class Memmber(object):
         self.name = name
         self.age = age
         # self.memberId   = memberId
-        print 'Memmber'
+        # print 'Memmber'
 
 
 class Post(object):
@@ -14,4 +14,4 @@ class Post(object):
     def __init__(self, address, content):
         self.address = address
         self.content = content
-        print 'Post'
+        # print 'Post'

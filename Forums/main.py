@@ -13,3 +13,6 @@ post3 = models.Post('z', 'z')
 member_store = Stores.MemberStore()
 member_store.add(member1)
 member_store.add(member2)
+
+getAllMembers = Stores.MemberStore()
+getAllMembers.get_all()
