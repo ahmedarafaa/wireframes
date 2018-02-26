@@ -1,5 +1,5 @@
 import models
-import Stores
+import stores
 
 member1 = models.Memmber('x', 'x')
 member2 = models.Memmber('y', 'y')
@@ -10,9 +10,10 @@ post2 = models.Post('y', 'y')
 post3 = models.Post('z', 'z')
 
 
-member_store = Stores.MemberStore()
+member_store = stores.MemberStore()
 member_store.add(member1)
 member_store.add(member2)
+print member_store.get_all()
 
-getAllMembers = Stores.MemberStore()
-getAllMembers.get_all()
+getAllMembers = stores.MemberStore()
+print getAllMembers.get_all()
