@@ -7,6 +7,10 @@ class Memmber(object):
         # self.memberId   = memberId
         # print 'Memmber'
 
+    def __repr__(self):
+
+        return 'Name:{} , Age:{}'.format(self.name, self.age)
+
 
 class Post(object):
     """docstring forPost."""
@@ -15,3 +19,6 @@ class Post(object):
         self.address = address
         self.content = content
         # print 'Post'
+
+    def __repr__(self):
+        return 'Address:{} , Content:{}'.format(self.address, self.content)
