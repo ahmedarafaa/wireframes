@@ -1,14 +1,13 @@
-class Memmber(object):
+class memmber(object):
     """docstring forMemmber."""
 
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        # self.memberId   = memberId
+        self.id = 0
         # print 'Memmber'
 
     def __repr__(self):
-
         return 'Name:{} , Age:{}'.format(self.name, self.age)
 
 
