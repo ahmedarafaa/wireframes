@@ -6,9 +6,9 @@ member1 = models.memmber('Ahmed', '20')
 
 add_new_member = stores.MemberStore()
 add_new_member.add(member1)
-#print add_new_member.get_all()
+print add_new_member.get_all()
 print add_new_member.last_id
-print add_new_member.delete(1)
+add_new_member.delete(1)
 
 # post1 = models.Post('x', 'x')
 # post2 = models.Post('y', 'y')

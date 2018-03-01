@@ -15,18 +15,15 @@ class MemberStore():
 
     def get_by_id(self, memberid):
         all_members = self.get_all()
-        for self.member in all_members:
-            if self.member.id == memberid:
-                return self.member
-            return None
+        for member in all_members:
+            if member.id == memberid:
+                return member
 
     def entity_exists(self, member):
         # check if member exist or not
-        if member in self.members:
+        get_id = self.get_by_id()
+        if member in get_id:
             return True
-        return False
-
-        return result
 
     def delete(self, memberid):
         # Remove if exist
