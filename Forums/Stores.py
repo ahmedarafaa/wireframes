@@ -11,22 +11,24 @@ class MemberStore():
         member.id = MemberStore.last_id
         MemberStore.members.append(member)
         MemberStore.last_id += 1
-        # append member
 
     def get_by_id(self, memberid):
         all_members = self.get_all()
+        result = None
         for member in all_members:
-            if member.id == memberid:
-                return member
+            if memberid == member.id:
+                result = member
+                break
+        return result
 
-    def entity_exists(self, member):
-        # check if member exist or not
+    def entity_exists(self, memberid):
         get_id = self.get_by_id()
-        if member in get_id:
+        if memberid in get_id:
             return True
+        else:
+            return False
 
     def delete(self, memberid):
-        # Remove if exist
         if memberid in self.get_by_id:
             self.members.remove(memberid)
 
